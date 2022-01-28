@@ -25,15 +25,34 @@ export default {
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
+  // components: true,
+  components: {
+    dirs: [
+      '~/components',
+      '~/components/buttons'
+    ]
+  },
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/i18n',
   ],
+  i18n: {
+    /* module options */
+    locales: [
+      {
+        code: 'en',
+        file: 'en-US.js'
+      }
+    ],
+    defaultLocale: 'en',
+    lazy: true,
+    langDir: 'lang/',
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
