@@ -1,7 +1,11 @@
 module.exports = {
   content: [],
   theme: {
-    extend: {},
+    fontFamily: {
+      display: ['Robot Condensed', 'system-ui', 'sans-serif'],
+      body: ['Robot Condensed', 'system-ui', 'sans-serif'],
+      h1: ['SeoulHangang', 'system-ui', 'sans-serif']
+    }
   },
   plugins: [],
 }
